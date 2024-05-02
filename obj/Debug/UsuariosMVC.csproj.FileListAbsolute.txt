@@ -1,0 +1,43 @@
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.AssemblyReference.cache
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.SuggestedBindingRedirects.cache
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.UsuariosViews.resources
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.Properties.Resources.resources
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.GenerateResource.cache
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.CoreCompileInputs.cache
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\bin\Debug\UsuariosMVC.exe.config
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\bin\Debug\UsuariosMVC.exe
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\bin\Debug\UsuariosMVC.pdb
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.exe
+E:\Projetos_Aula_FSG\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.pdb
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\bin\Debug\UsuariosMVC.exe.config
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\bin\Debug\UsuariosMVC.exe
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\bin\Debug\UsuariosMVC.pdb
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.AssemblyReference.cache
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.SuggestedBindingRedirects.cache
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.UsuariosViews.resources
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.Properties.Resources.resources
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.GenerateResource.cache
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.CoreCompileInputs.cache
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.exe
+F:\Projetos_Aula_FSG\POO_II 2023\Aula 08 - GUI - MVC\UsuariosMVC\obj\Debug\UsuariosMVC.pdb
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.AssemblyReference.cache
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.SuggestedBindingRedirects.cache
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.Properties.Resources.resources
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.GenerateResource.cache
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.CoreCompileInputs.cache
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.exe
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.pdb
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\bin\Debug\UsuariosMVC.exe.config
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\bin\Debug\UsuariosMVC.exe
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\bin\Debug\UsuariosMVC.pdb
+F:\Projetos_Aula_FSG\Projetos_WF\Padrões de Projeto\06_Exercicio_MVC\UsuariosMVC\obj\Debug\UsuariosMVC.FrmUsuarios.resources
+C:\Users\Erick\Desktop\UsuariosMVC\bin\Debug\UsuariosMVC.exe.config
+C:\Users\Erick\Desktop\UsuariosMVC\bin\Debug\UsuariosMVC.exe
+C:\Users\Erick\Desktop\UsuariosMVC\bin\Debug\UsuariosMVC.pdb
+C:\Users\Erick\Desktop\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.AssemblyReference.cache
+C:\Users\Erick\Desktop\UsuariosMVC\obj\Debug\UsuariosMVC.FrmUsuarios.resources
+C:\Users\Erick\Desktop\UsuariosMVC\obj\Debug\UsuariosMVC.Properties.Resources.resources
+C:\Users\Erick\Desktop\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.GenerateResource.cache
+C:\Users\Erick\Desktop\UsuariosMVC\obj\Debug\UsuariosMVC.csproj.CoreCompileInputs.cache
+C:\Users\Erick\Desktop\UsuariosMVC\obj\Debug\UsuariosMVC.exe
+C:\Users\Erick\Desktop\UsuariosMVC\obj\Debug\UsuariosMVC.pdb
