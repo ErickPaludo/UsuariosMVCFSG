@@ -8,5 +8,12 @@ namespace UsuariosMVC
 {
     public class UsuariosModel
     {
+        private static List<Pessoa> pessoa = new List<Pessoa>();
+        public List<Pessoa> Pessoa { get { return pessoa; }}
+        public void Gravar(Pessoa dados)
+        {
+            pessoa.Add(dados);
+        }
+      
     }
 }

@@ -7,18 +7,20 @@ using System.Windows.Forms;
 
 namespace UsuariosMVC
 {
-  internal static class Program
-  {
-    /// <summary>
-    /// Ponto de entrada principal para o aplicativo.
-    /// </summary>
-    [STAThread]
-    static void Main()
+    internal static class Program
     {
-    
-      Application.EnableVisualStyles();
-      Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new FrmUsuarios());
+        /// <summary>
+        /// Ponto de entrada principal para o aplicativo.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            FrmUsuarios usuariosView = new FrmUsuarios();
+            usuariosView.Visible = false;
+            UsuariosModel usuariosModel = new UsuariosModel();
+            UsuariosController usuariosController = new UsuariosController(usuariosView, usuariosModel);
+            usuariosView.ShowDialog();
+
+        }
     }
-  }
 }

@@ -19,12 +19,12 @@ namespace UsuariosMVC
         }
         public void SetController(UsuariosController controller_)
         {
-            controller = controller_;
+            this.controller = controller_;
         }
-        public int Id
+        public string Id
         {
-          get { return Convert.ToInt32(txtID.Text); }
-          set { txtID.Text = value.ToString(); }
+          get { return txtID.Text; }
+          set { txtID.Text = value; }
         }
         public string Nome
         {
@@ -50,6 +50,21 @@ namespace UsuariosMVC
         {
            get { return this.rdMasculino.Checked; }
           set { this.rdMasculino.Checked = value; }
+        }
+        public DataGridView Table
+        {
+            get { return grdUsuarios; }
+            set { grdUsuarios = value; }
+        }
+
+        private void GravarDados(object sender, EventArgs e)
+        {
+            this.controller.Gravar();
+        }
+
+        private void Novo(object sender, EventArgs e)
+        {
+            this.controller.Novo();
         }
     }
 }
