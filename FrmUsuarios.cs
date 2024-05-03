@@ -41,15 +41,16 @@ namespace UsuariosMVC
           get { return this.txtDepartamento.Text; }
           set { this.txtDepartamento.Text = value; }
         }
-        public bool Feminino
+        public RadioButton Feminino
         {
-           get { return this.rdFeminino.Checked; }
-          set { this.rdFeminino.Checked = value; }
+           get { return rdFeminino; }
+          set { rdFeminino = value; }
         }
-        public bool Masculino
+        public RadioButton Masculino
         {
-           get { return this.rdMasculino.Checked; }
-          set { this.rdMasculino.Checked = value; }
+           get {
+                return rdMasculino; }
+          set { rdMasculino = value; }
         }
         public DataGridView Table
         {
@@ -65,6 +66,24 @@ namespace UsuariosMVC
         private void Novo(object sender, EventArgs e)
         {
             this.controller.Novo();
+        }
+
+        private void SelectCell(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                controller.RetornarUsuario((grdUsuarios.Rows[e.RowIndex].Cells[0].Value).ToString(),e.RowIndex);
+            }
+        }
+
+        private void ExcluirUsuario(object sender, EventArgs e)
+        {
+            controller.ExcluirUser();
+        }
+
+        private void BuscaPorId(object sender, EventArgs e)
+        {
+            controller.Leave();
         }
     }
 }

@@ -14,8 +14,8 @@ namespace UsuariosMVC
         string Nome {get; set;}
         string Sobrenome {get; set;}
         string Departamento {get; set;}
-        bool Feminino  {get; set;}
-        bool Masculino  {get; set;}
+        RadioButton Feminino  {get; set;}
+        RadioButton Masculino  {get; set;}
         DataGridView Table { get; set;}
     }
 }

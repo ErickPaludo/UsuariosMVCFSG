@@ -51,3 +51,13 @@ C:\Users\erick\OneDrive\Área de Trabalho\UsuariosMVCFSG\obj\Debug\UsuariosMVC.c
 C:\Users\erick\OneDrive\Área de Trabalho\UsuariosMVCFSG\obj\Debug\UsuariosMVC.csproj.CoreCompileInputs.cache
 C:\Users\erick\OneDrive\Área de Trabalho\UsuariosMVCFSG\obj\Debug\UsuariosMVC.exe
 C:\Users\erick\OneDrive\Área de Trabalho\UsuariosMVCFSG\obj\Debug\UsuariosMVC.pdb
+C:\Users\Erick\Desktop\UsuariosMVCFSG\bin\Debug\UsuariosMVC.exe.config
+C:\Users\Erick\Desktop\UsuariosMVCFSG\bin\Debug\UsuariosMVC.exe
+C:\Users\Erick\Desktop\UsuariosMVCFSG\bin\Debug\UsuariosMVC.pdb
+C:\Users\Erick\Desktop\UsuariosMVCFSG\obj\Debug\UsuariosMVC.csproj.AssemblyReference.cache
+C:\Users\Erick\Desktop\UsuariosMVCFSG\obj\Debug\UsuariosMVC.FrmUsuarios.resources
+C:\Users\Erick\Desktop\UsuariosMVCFSG\obj\Debug\UsuariosMVC.Properties.Resources.resources
+C:\Users\Erick\Desktop\UsuariosMVCFSG\obj\Debug\UsuariosMVC.csproj.GenerateResource.cache
+C:\Users\Erick\Desktop\UsuariosMVCFSG\obj\Debug\UsuariosMVC.csproj.CoreCompileInputs.cache
+C:\Users\Erick\Desktop\UsuariosMVCFSG\obj\Debug\UsuariosMVC.exe
+C:\Users\Erick\Desktop\UsuariosMVCFSG\obj\Debug\UsuariosMVC.pdb

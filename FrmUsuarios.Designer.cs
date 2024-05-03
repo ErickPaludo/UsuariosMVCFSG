@@ -44,7 +44,6 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnGravar = new System.Windows.Forms.Button();
             this.grdUsuarios = new System.Windows.Forms.DataGridView();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSobrenome = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +61,7 @@
             this.btnExcluir.Size = new System.Drawing.Size(97, 23);
             this.btnExcluir.TabIndex = 37;
             this.btnExcluir.Text = "&Excluir";
+            this.btnExcluir.Click += new System.EventHandler(this.ExcluirUsuario);
             // 
             // grpDetails
             // 
@@ -80,7 +80,7 @@
             this.grpDetails.Size = new System.Drawing.Size(614, 144);
             this.grpDetails.TabIndex = 39;
             this.grpDetails.TabStop = false;
-            this.grpDetails.Text = "Registrar Novo Usuário";
+            this.grpDetails.Text = "Registrar Usuário";
             // 
             // grbSex
             // 
@@ -89,16 +89,16 @@
             this.grbSex.ForeColor = System.Drawing.SystemColors.MenuText;
             this.grbSex.Location = new System.Drawing.Point(10, 79);
             this.grbSex.Name = "grbSex";
-            this.grbSex.Size = new System.Drawing.Size(260, 54);
+            this.grbSex.Size = new System.Drawing.Size(218, 54);
             this.grbSex.TabIndex = 29;
             this.grbSex.TabStop = false;
             this.grbSex.Text = "Sexo";
             // 
             // rdFeminino
             // 
-            this.rdFeminino.Location = new System.Drawing.Point(153, 19);
+            this.rdFeminino.Location = new System.Drawing.Point(112, 19);
             this.rdFeminino.Name = "rdFeminino";
-            this.rdFeminino.Size = new System.Drawing.Size(64, 24);
+            this.rdFeminino.Size = new System.Drawing.Size(84, 24);
             this.rdFeminino.TabIndex = 5;
             this.rdFeminino.Text = "Feminino";
             // 
@@ -137,6 +137,7 @@
             this.txtID.Size = new System.Drawing.Size(218, 23);
             this.txtID.TabIndex = 5;
             this.txtID.Text = "1";
+            this.txtID.Leave += new System.EventHandler(this.BuscaPorId);
             // 
             // lblID
             // 
@@ -182,7 +183,7 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(641, 11);
+            this.btnNovo.Location = new System.Drawing.Point(641, 40);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 23);
             this.btnNovo.TabIndex = 36;
@@ -191,7 +192,7 @@
             // 
             // btnGravar
             // 
-            this.btnGravar.Location = new System.Drawing.Point(641, 40);
+            this.btnGravar.Location = new System.Drawing.Point(641, 69);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(97, 23);
             this.btnGravar.TabIndex = 38;
@@ -214,14 +215,7 @@
             this.grdUsuarios.RowTemplate.Height = 24;
             this.grdUsuarios.Size = new System.Drawing.Size(729, 294);
             this.grdUsuarios.TabIndex = 40;
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(641, 69);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(97, 23);
-            this.btnConsultar.TabIndex = 41;
-            this.btnConsultar.Text = "&Consultar";
+            this.grdUsuarios.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelectCell);
             // 
             // ColumnId
             // 
@@ -245,6 +239,7 @@
             // 
             // ColumnDepartamento
             // 
+            this.ColumnDepartamento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ColumnDepartamento.HeaderText = "Departamento";
             this.ColumnDepartamento.Name = "ColumnDepartamento";
             // 
@@ -253,7 +248,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 459);
-            this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.grdUsuarios);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.grpDetails);
@@ -286,8 +280,7 @@
     internal System.Windows.Forms.Label lblFirstName;
     internal System.Windows.Forms.Button btnNovo;
     internal System.Windows.Forms.Button btnGravar;
-    private System.Windows.Forms.DataGridView grdUsuarios;
-    internal System.Windows.Forms.Button btnConsultar;
+        public System.Windows.Forms.DataGridView grdUsuarios;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSobrenome;
