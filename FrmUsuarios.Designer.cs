@@ -49,9 +49,13 @@
             this.ColumnSobrenome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnSexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDepartamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Consultar = new System.Windows.Forms.GroupBox();
+            this.txtPesquisa = new System.Windows.Forms.TextBox();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             this.grpDetails.SuspendLayout();
             this.grbSex.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdUsuarios)).BeginInit();
+            this.Consultar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnExcluir
@@ -59,12 +63,13 @@
             this.btnExcluir.Location = new System.Drawing.Point(641, 98);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(97, 23);
-            this.btnExcluir.TabIndex = 37;
+            this.btnExcluir.TabIndex = 7;
             this.btnExcluir.Text = "&Excluir";
             this.btnExcluir.Click += new System.EventHandler(this.ExcluirUsuario);
             // 
             // grpDetails
             // 
+            this.grpDetails.Controls.Add(this.Consultar);
             this.grpDetails.Controls.Add(this.grbSex);
             this.grpDetails.Controls.Add(this.txtDepartamento);
             this.grpDetails.Controls.Add(this.lblDepartment);
@@ -90,7 +95,7 @@
             this.grbSex.Location = new System.Drawing.Point(10, 79);
             this.grbSex.Name = "grbSex";
             this.grbSex.Size = new System.Drawing.Size(218, 54);
-            this.grbSex.TabIndex = 29;
+            this.grbSex.TabIndex = 5;
             this.grbSex.TabStop = false;
             this.grbSex.Text = "Sexo";
             // 
@@ -115,15 +120,14 @@
             // txtDepartamento
             // 
             this.txtDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepartamento.Location = new System.Drawing.Point(404, 18);
+            this.txtDepartamento.Location = new System.Drawing.Point(404, 21);
             this.txtDepartamento.Name = "txtDepartamento";
             this.txtDepartamento.Size = new System.Drawing.Size(204, 23);
-            this.txtDepartamento.TabIndex = 27;
-            this.txtDepartamento.Text = "Suporte";
+            this.txtDepartamento.TabIndex = 2;
             // 
             // lblDepartment
             // 
-            this.lblDepartment.Location = new System.Drawing.Point(317, 19);
+            this.lblDepartment.Location = new System.Drawing.Point(317, 25);
             this.lblDepartment.Name = "lblDepartment";
             this.lblDepartment.Size = new System.Drawing.Size(89, 17);
             this.lblDepartment.TabIndex = 28;
@@ -135,13 +139,12 @@
             this.txtID.Location = new System.Drawing.Point(52, 20);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(218, 23);
-            this.txtID.TabIndex = 5;
-            this.txtID.Text = "1";
+            this.txtID.TabIndex = 1;
             this.txtID.Leave += new System.EventHandler(this.BuscaPorId);
             // 
             // lblID
             // 
-            this.lblID.Location = new System.Drawing.Point(29, 20);
+            this.lblID.Location = new System.Drawing.Point(24, 23);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(22, 20);
             this.lblID.TabIndex = 25;
@@ -150,15 +153,14 @@
             // txtSobrenome
             // 
             this.txtSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSobrenome.Location = new System.Drawing.Point(404, 54);
+            this.txtSobrenome.Location = new System.Drawing.Point(404, 50);
             this.txtSobrenome.Name = "txtSobrenome";
             this.txtSobrenome.Size = new System.Drawing.Size(204, 23);
             this.txtSobrenome.TabIndex = 4;
-            this.txtSobrenome.Text = "Paludo";
             // 
             // lblLastName
             // 
-            this.lblLastName.Location = new System.Drawing.Point(327, 56);
+            this.lblLastName.Location = new System.Drawing.Point(317, 54);
             this.lblLastName.Name = "lblLastName";
             this.lblLastName.Size = new System.Drawing.Size(71, 15);
             this.lblLastName.TabIndex = 23;
@@ -170,8 +172,7 @@
             this.txtNome.Location = new System.Drawing.Point(52, 50);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(219, 23);
-            this.txtNome.TabIndex = 1;
-            this.txtNome.Text = "Erick";
+            this.txtNome.TabIndex = 3;
             // 
             // lblFirstName
             // 
@@ -186,7 +187,7 @@
             this.btnNovo.Location = new System.Drawing.Point(641, 40);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(97, 23);
-            this.btnNovo.TabIndex = 36;
+            this.btnNovo.TabIndex = 8;
             this.btnNovo.Text = "&Novo ";
             this.btnNovo.Click += new System.EventHandler(this.Novo);
             // 
@@ -195,7 +196,7 @@
             this.btnGravar.Location = new System.Drawing.Point(641, 69);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(97, 23);
-            this.btnGravar.TabIndex = 38;
+            this.btnGravar.TabIndex = 6;
             this.btnGravar.Text = "&Gravar";
             this.btnGravar.Click += new System.EventHandler(this.GravarDados);
             // 
@@ -243,6 +244,34 @@
             this.ColumnDepartamento.HeaderText = "Departamento";
             this.ColumnDepartamento.Name = "ColumnDepartamento";
             // 
+            // Consultar
+            // 
+            this.Consultar.Controls.Add(this.btnPesquisar);
+            this.Consultar.Controls.Add(this.txtPesquisa);
+            this.Consultar.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.Consultar.Location = new System.Drawing.Point(320, 84);
+            this.Consultar.Name = "Consultar";
+            this.Consultar.Size = new System.Drawing.Size(288, 54);
+            this.Consultar.TabIndex = 30;
+            this.Consultar.TabStop = false;
+            this.Consultar.Text = "Consultar";
+            // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.Location = new System.Drawing.Point(6, 19);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(190, 20);
+            this.txtPesquisa.TabIndex = 9;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(202, 17);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(64, 23);
+            this.btnPesquisar.TabIndex = 10;
+            this.btnPesquisar.Text = "&Pesquisar";
+            this.btnPesquisar.Click += new System.EventHandler(this.Procurar);
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -255,11 +284,14 @@
             this.Controls.Add(this.btnGravar);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmUsuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuários Ativos";
             this.grpDetails.ResumeLayout(false);
             this.grpDetails.PerformLayout();
             this.grbSex.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdUsuarios)).EndInit();
+            this.Consultar.ResumeLayout(false);
+            this.Consultar.PerformLayout();
             this.ResumeLayout(false);
 
     }
@@ -286,6 +318,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSobrenome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSexo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnDepartamento;
+        private System.Windows.Forms.GroupBox Consultar;
+        internal System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.TextBox txtPesquisa;
     }
 }
 

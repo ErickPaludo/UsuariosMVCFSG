@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Windows.Forms;
+using static System.Windows.Forms.LinkLabel;
 
 namespace UsuariosMVC
 {
@@ -20,6 +23,7 @@ namespace UsuariosMVC
         public void Gravar(Pessoa dados)
         {
             pessoa.Add(dados);
+            GravarDados();
         }
 
         public bool ValidaExistencia(string id)
@@ -42,7 +46,6 @@ namespace UsuariosMVC
 
         public void Editar(Pessoa novos_dados)
         {
-            Pessoa user_ = null;
             foreach (Pessoa obj in pessoa)
             {
                 if (obj.Id == novos_dados.Id)
@@ -53,7 +56,7 @@ namespace UsuariosMVC
                     obj.Sexo = novos_dados.Sexo;
                 }
             }
-            pessoa.Remove(user_);
+            GravarDados();
         }
 
         public void Excluir(string id)
@@ -63,11 +66,38 @@ namespace UsuariosMVC
             {
                 if (obj.Id == id)
                 {
-                   user_ = obj;
+                    user_ = obj;
                 }
             }
             pessoa.Remove(user_);
+            GravarDados();
         }
-
+        private void GravarDados()
+        {
+            StreamWriter sw = File.CreateText("dados.txt");
+            foreach (Pessoa p in pessoa)
+            {
+                sw.WriteLine($"{p.Id}%{p.Nome}%{p.Sobrenome}%{p.Departamento}%{p.Sexo}%");
+            }
+            sw.Close();
+        }
+        public void Lerdados() //lê o endereço do banco
+        {
+            try
+            {
+                using (StreamReader sr = new StreamReader("dados.txt"))
+                {
+                    string linha = string.Empty;
+                    while ((linha = sr.ReadLine()) != null)
+                    {
+                        string[] dados = linha.Split('%');
+                            pessoa.Add(new Pessoa(dados[0], dados[1], dados[2], dados[3], Convert.ToChar(dados[4])));
+                    }
+                }
+            }
+            catch
+            {
+            }
+        }
     }
 }

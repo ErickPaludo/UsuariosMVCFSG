@@ -57,7 +57,17 @@ namespace UsuariosMVC
             get { return grdUsuarios; }
             set { grdUsuarios = value; }
         }
-
+        public string Pesquisar
+        {
+            get
+            {
+                return this.txtPesquisa.Text;
+            }
+            set
+            {
+                this.txtPesquisa.Text = value;
+            }
+        }
         private void GravarDados(object sender, EventArgs e)
         {
             this.controller.Gravar();
@@ -84,6 +94,11 @@ namespace UsuariosMVC
         private void BuscaPorId(object sender, EventArgs e)
         {
             controller.Leave();
+        }
+
+        private void Procurar(object sender, EventArgs e)
+        {
+            controller.Procurar();
         }
     }
 }

@@ -16,6 +16,8 @@ namespace UsuariosMVC
             this.usuariosView = usuariosView;
             this.usuariosModel = usuariosModel;
             usuariosView.SetController(this);
+            usuariosModel.Lerdados();
+            AtualizaTable();
             TableEnabled();
         }
         public void Gravar()
@@ -69,6 +71,22 @@ namespace UsuariosMVC
                     Clear();
                 }
 
+            }
+        }
+        public void Procurar()
+        {
+            var usuerfiltro = usuariosModel.Pessoa
+                .Where(item =>
+                    item.Nome.StartsWith(usuariosView.Pesquisar, StringComparison.OrdinalIgnoreCase) ||
+                    item.Sobrenome.StartsWith(usuariosView.Pesquisar, StringComparison.OrdinalIgnoreCase) ||
+                    (item.Nome + " " + item.Sobrenome).StartsWith(usuariosView.Pesquisar, StringComparison.OrdinalIgnoreCase) ||
+                    (item.Id).StartsWith(usuariosView.Pesquisar, StringComparison.OrdinalIgnoreCase)
+                );
+
+            usuariosView.Table.Rows.Clear();
+            foreach (var obj in usuerfiltro)
+            {
+                usuariosView.Table.Rows.Add(obj.Id, obj.Nome, obj.Sobrenome, obj.Sexo, obj.Departamento);
             }
         }
         public void AtualizaTable()
